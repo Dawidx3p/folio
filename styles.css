@@ -109,6 +109,9 @@ section p{
   color: #333;
 }
 
+.aqua{background-color: #3EF0A4;}
+.aquaDark{background-color: #0AA362; color:white;}
+
 section .section-title h3{
   margin-left: 3rem;
 }
@@ -131,17 +134,11 @@ section .section-title h3{
   transition-duration: 0.15s;
 }
 
-a .red:hover{
-  background-color: #b84430;
-}
+a .red:hover{background-color: #b84430;}
+a .light:hover{background-color: rgb(207, 207, 207);}
+a .orange:hover{background-color: #c76728;}
+a .aqua:hover{background-color: #0AA362}
 
-a .light:hover{
-  background-color: rgb(207, 207, 207);
-}
-
-a .orange:hover{
-  background-color: #c76728;
-}
 
 #frontEnd{
   height: 30rem;
