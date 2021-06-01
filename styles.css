@@ -143,3 +143,18 @@ a .aqua:hover{background-color: #0AA362}
 #frontEnd{
   height: 30rem;
 }
+
+@media only screen and (max-width: 740px) {
+  html{
+    font-size: 14px;
+  }
+  .grid2{
+    grid-template: 1fr / 1fr;
+  }
+  .grid3{
+    grid-template: 1fr / 1fr;
+  }
+  body{
+    padding: 0 3rem;
+  }
+}
