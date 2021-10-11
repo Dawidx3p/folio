@@ -24,33 +24,22 @@ a{
   color: white;
 }
 body{
+  min-height: 100vh;
   padding: 0 9rem;
   color: #333;
+  background-image: url('resources/marek-piwnicki-LGgKrtjNsoI-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* 2. Color Styles
 ======================================== */
 
 /* Color Theme Swatches in Hex */
-.My-Color-Theme-1-hex { color: #A32F1A; }
-.My-Color-Theme-2-hex { color: #FF745C; }
-.My-Color-Theme-3-hex { color: #F0593E; }
-.My-Color-Theme-4-hex { color: #0AA362; }
-.My-Color-Theme-5-hex { color: #3EF0A4; }
-
-/* Color Theme Swatches in RGBA */
-.My-Color-Theme-1-rgba { color: rgba(163, 47, 26, 1); }
-.My-Color-Theme-2-rgba { color: rgba(255, 116, 92, 1); }
-.My-Color-Theme-3-rgba { color: rgba(240, 89, 62, 1); }
-.My-Color-Theme-4-rgba { color: rgba(10, 163, 98, 1); }
-.My-Color-Theme-5-rgba { color: rgba(62, 240, 164, 1); }
-
-/* Color Theme Swatches in HSLA */
-.My-Color-Theme-1-hsla { color: hsla(9, 72, 37, 1); }
-.My-Color-Theme-2-hsla { color: hsla(8, 100, 68, 1); }
-.My-Color-Theme-3-hsla { color: hsla(9, 85, 59, 1); }
-.My-Color-Theme-4-hsla { color: hsla(154, 88, 33, 1); }
-.My-Color-Theme-5-hsla { color: hsla(154, 85, 59, 1); }
+.color-theme-1 {color: #1E1F23; }
+.color-theme-2 {color: #2F406C; }
+.color-theme-3 {color: #FAB29C; }
+.color-theme-4 {color: #FFF2EF; }
 
 /* 3. Fonts
 ======================================== */
@@ -66,7 +55,7 @@ h1, h2, h3{
 
 h1{font-size: 3rem;}
 h2{font-size: 1.5rem;}
-h3{font-size: 1.25rem;
+h3{font-size: 1rem;
   line-height: 1.5rem;
 }
 
@@ -74,6 +63,7 @@ p{
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   max-width: 700px;
+  min-width: 20rem;
   line-height: 1.5rem;
 }
 
@@ -83,65 +73,84 @@ p{
 /* 5. Section styles
 ======================================== */
 
-section .section-title {
-  padding: 0.5rem;
-  height: 2rem;
-  display: grid;
-  align-items: center;
+.shadow-right{
+  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.77);
+}
+.shadow-left{
+  box-shadow: -5px 5px 12px rgba(0, 0, 0, 0.77);
+}
+.shadow-center{
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.77);
 }
 
-section p{
-  padding: 1rem 3rem;
+section{
+  padding: 1.5rem;
 }
 
-.red{
-  background-color: #F0593E;
-  color: white;
+#story{
+  margin: 1.5rem auto;
+  text-align: center;
 }
 
-.orange{
-  background-color: #E8762A;
-  color: white;
+section h2{
+  margin-bottom: 0.6rem;
 }
 
 .light{
-  background-color: white;
-  color: #333;
+  background-color: #fab29ce1;
+  color: #1E1F23;
 }
 
-.aqua{background-color: #3EF0A4;}
-.aquaDark{background-color: #0AA362; color:white;}
+.dark{
+  background-color: #2f406ce1;
+  color:#FFF2EF;
+}
 
-section .section-title h3{
-  margin-left: 3rem;
+#projects a{
+  display: block;
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5rem;
+  color: #46265E;
+}
+
+.small{
+  max-width: 20rem;
+}
+
+.long{
+  max-width: 700px;
 }
 
 .grid2{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
 }
 
 .grid3{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
 }
-
-.tiles{
-  height: 15rem;
-  text-align: center;
-  display: grid;
-  align-items: center;
-  transition-duration: 0.15s;
-}
-
-a .red:hover{background-color: #b84430;}
-a .light:hover{background-color: rgb(207, 207, 207);}
-a .orange:hover{background-color: #c76728;}
-a .aqua:hover{background-color: #0AA362}
-
 
 #frontEnd{
   height: 30rem;
+}
+
+.bold{
+  font-weight: 600;
+}
+
+footer{
+  padding: 3rem;
+  color:#FFF2EF;
+  display: grid;
+  justify-items: center;
+}
+
+footer h2{
+  margin-bottom: 2rem;
 }
 
 @media only screen and (max-width: 740px) {
